@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //bài 1
+        let toan=Number(prompt("enter toan"));
+        let van=Number(prompt("enter van"));
+        let ta=Number(prompt("enter tieng anh"));
+        while (toan>10|| toan<0)
+        {
+            toan=Number(prompt("nhap lai enter toan"));
+        }
+        while (van>10 || van<0)
+        {
+            van=Number(prompt(" nhap lai enter van"));
+        }
+        while (ta>10 ||ta<0)
+        {
+            ta=Number(prompt("nhap lai enter tieng anh"));
+        }
+
+        //let tong=(toan+van+ta)/3;
+        let dtb=((toan*2)+van+(ta*2))/5;
+
+        //while (toan<10 && toan>0)
+        if (dtb<5)
+        {
+            alert("ko dat");
+        }
+        else if (dtb<=5 && dtb<7.5)
+        {
+            alert("dat");
+        }
+        else if (dtb<=7.6 && dtb<8.5)
+        {
+            alert("kha");
+        } else
+        {
+            alert("tot");
+        }
+
+
+        //bài 2
+
+        var n=Number(prompt("nhập số nguyên tố"));
+        var count="";
+        kt=1;
+        for (count=2;count<=n;count++)
+        {
+            for (var j=2;j<=count-1;j++)
+            {
+                if (count%j==0)
+                {
+                    kt=0;
+                }
+            }
+            if (kt==true)
+            {
+                alert("là snt");
+            }else
+            {
+                alert("ko là snt");
+            }
+            // if (kt==1)
+            // {
+            //     document.write(count+" - ");
+            // }
+            kt=1;
+        }
+
+
+        // var n=Number(prompt("enter number"));
+        if (n%2!=0 && n%n==0)
+        {
+            alert("là snt");
+        }else
+        {
+            alert("ko là snt");
+        }
+    </script>
+</body>
+</html>
